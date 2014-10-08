@@ -13,5 +13,10 @@ public class Numero extends Expresion{
 		return valor;
 		
 	}
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return valor+"";
+	}
 
 }

@@ -15,4 +15,10 @@ public class Dividir extends Operacion {
 		return resultado;
 	}
 
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "("+expresion1.toString()+"/"+expresion2.toString()+")";
+	}
+
 }
