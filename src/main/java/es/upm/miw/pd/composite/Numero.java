@@ -2,13 +2,13 @@ package es.upm.miw.pd.composite;
 
 public class Numero extends Expresion{
 
-	private double valor;
+	private int valor;
 	
-	public Numero(double valro){
+	public Numero(int valor){
 		this.valor = valor;
 	}
 	@Override
-	public double operar() {
+	public int operar() {
 		// TODO Auto-generated method stub
 		return valor;
 		

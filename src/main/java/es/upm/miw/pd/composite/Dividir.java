@@ -2,20 +2,16 @@ package es.upm.miw.pd.composite;
 
 import java.util.ArrayList;
 
-public class Dividir extends Expresion {
+public class Dividir extends Operacion {
 
-	ArrayList<Expresion> expresiones;
-	
-	public Dividir(Expresion expresion,Numero numero){
-		
+	public Dividir(Expresion expresion1, Expresion expresion2) {
+		super(expresion1, expresion2);
 	}
 
 	@Override
-	public double operar() {
-		double resultado = 0;
-		for (Expresion expresion : expresiones) {
-			resultado /= expresion.operar();
-		}
+	public int operar() {
+		int resultado = 0;
+		resultado = expresion1.operar()/expresion2.operar();
 		return resultado;
 	}
 
