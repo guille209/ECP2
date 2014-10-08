@@ -11,7 +11,7 @@ public class FactoryReferences {
 	private static FactoryReferences factoryReferences;
 
 	private FactoryReferences() {
-		this.references = new HashMap<>();
+		this.references = new HashMap();
 		this.reference = 0;
 	}
 
