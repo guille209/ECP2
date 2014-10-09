@@ -7,15 +7,7 @@ public class NaturalNumberEn extends NaturalNumber {
 			"four", "five" };
 
 	public NaturalNumberEn(int value) {
-		super(value);
-	}
-
-	public String getTextValue() {
-		if (this.value < textValue.length) {
-			return NaturalNumberEn.textValue[this.value];
-		} else {
-			return "???";
-		}
+		super(value,textValue);
 	}
 
 }
