@@ -1,6 +1,6 @@
 package es.upm.miw.pd.state.connection;
 
-public class Preparado  extends Estado{
+public class Preparado  extends EstadoObjeto{
 
 	@Override
 	public void parar(Conexion conexion) {
@@ -37,6 +37,12 @@ public class Preparado  extends Estado{
 	public void abrir(Conexion conexion) {
 		// TODO Auto-generated method stub
 		
+	}
+
+	@Override
+	public Estado getEstado() {
+		// TODO Auto-generated method stub
+		return Estado.PREPARADO;
 	}
 
 }

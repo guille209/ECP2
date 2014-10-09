@@ -1,6 +1,6 @@
 package es.upm.miw.pd.state.connection;
 
-public class Cerrado extends Estado {
+public class Cerrado extends EstadoObjeto {
 
 	@Override
 	public void parar(Conexion conexion) {
@@ -35,6 +35,12 @@ public class Cerrado extends Estado {
 	public void abrir(Conexion conexion) {
 		conexion.setEstado(new Preparado());
 		
+	}
+
+	@Override
+	public Estado getEstado() {
+		// TODO Auto-generated method stub
+		return Estado.CERRADO;
 	}
 
 }

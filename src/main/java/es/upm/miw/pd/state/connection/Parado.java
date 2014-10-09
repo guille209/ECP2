@@ -1,6 +1,6 @@
 package es.upm.miw.pd.state.connection;
 
-public class Parado extends Estado {
+public class Parado extends EstadoObjeto {
 
 	@Override
 	public void parar(Conexion conexion) {
@@ -33,8 +33,14 @@ public class Parado extends Estado {
 
 	@Override
 	public void abrir(Conexion conexion) {
-		// TODO Auto-generated method stub
+		throw new UnsupportedOperationException("Accion no permitida... ");
 		
+	}
+
+	@Override
+	public Estado getEstado() {
+		// TODO Auto-generated method stub
+		return Estado.PARADO;
 	}
 
 }
