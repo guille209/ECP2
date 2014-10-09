@@ -6,8 +6,8 @@ public class NaturalNumberManager {
 
 	private NaturalNumber naturalNumber;
 
-	public void createNaturalNumber() {
-		naturalNumber = creator.createNaturalNumber();
+	public void createNaturalNumber(int numero) {
+		naturalNumber = creator.createNaturalNumber(numero);
 	}
 
 	public void setCreator(NaturalNumberCreator creator) {
