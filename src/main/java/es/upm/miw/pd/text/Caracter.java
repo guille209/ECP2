@@ -9,15 +9,35 @@ public class Caracter extends Componente{
 	}
 	
 	@Override
-	public void dibujar(boolean mayusculas) {
+	public String dibujar(boolean mayusculas) {
 		// TODO Auto-generated method stub
 		if(mayusculas){
-			System.out.println(representacion+"".toUpperCase());
+			return (representacion+"").toUpperCase();
 		}else{
-			System.out.println(representacion);
+			return representacion+"";
 		}
 		
 	}
+
+	@Override
+	public boolean esCompuesto() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void add(Componente componente) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void supr(Componente componente) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
 
 
 }
