@@ -18,8 +18,7 @@ public class ComandoDeshacer extends ComandoOperacion implements Comando {
 	public void execute() {
 		// TODO Auto-generated method stub
 		IO.out.clear();
-		IO.out.print("Ultima operación desecha, valor actual:"
-				+ calculadora.deshacer());
+		IO.out.print("Ultima operación desecha, valor actual:"+calculadora.deshacer());
 	}
 
 }
