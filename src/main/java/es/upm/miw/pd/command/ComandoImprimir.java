@@ -6,8 +6,8 @@ public class ComandoImprimir extends ComandoOperacion implements Comando {
 
 	Calculadora calculadora;
 
-	public ComandoImprimir(Calculadora calculadora) {
-		super(calculadora);
+	public ComandoImprimir(Mementable<MementoCalculadora> calc) {
+		super(calc);
 	}
 
 	@Override

@@ -1,9 +1,9 @@
 package es.upm.miw.pd.command;
 
 public abstract class ComandoOperacion {
-	protected Calculadora calculadora;
+	protected Calculadora2 calculadora;
 	
-	public ComandoOperacion(Calculadora calculadora){
-		this.calculadora = calculadora;
+	public ComandoOperacion(Mementable<MementoCalculadora> calc){
+		this.calculadora = (Calculadora2) calc;
 	}
 }

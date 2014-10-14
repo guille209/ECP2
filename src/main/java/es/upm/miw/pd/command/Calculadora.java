@@ -1,7 +1,7 @@
 package es.upm.miw.pd.command;
 
 public class Calculadora {
-    private int total;
+    protected int total;
     private int valorAnterior;
 
     public Calculadora() {

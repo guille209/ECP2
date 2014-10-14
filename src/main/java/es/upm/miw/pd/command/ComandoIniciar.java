@@ -2,12 +2,10 @@ package es.upm.miw.pd.command;
 
 import upm.jbb.IO;
 
-public class ComandoIniciar implements Comando {
-
-	Calculadora calculadora;
+public class ComandoIniciar extends ComandoOperacion  implements Comando {
 	
-	public ComandoIniciar(Calculadora calculadora){
-		this.calculadora = calculadora;
+	public ComandoIniciar(Mementable<MementoCalculadora> calc){
+		super(calc);
 	}
 
 	@Override
