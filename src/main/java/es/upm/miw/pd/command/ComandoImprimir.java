@@ -2,12 +2,12 @@ package es.upm.miw.pd.command;
 
 import upm.jbb.IO;
 
-public class ComandoImprimir implements Comando {
+public class ComandoImprimir extends ComandoOperacion implements Comando {
 
 	Calculadora calculadora;
 
 	public ComandoImprimir(Calculadora calculadora) {
-		this.calculadora = calculadora;
+		super(calculadora);
 	}
 
 	@Override

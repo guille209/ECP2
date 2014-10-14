@@ -2,12 +2,10 @@ package es.upm.miw.pd.command;
 
 import upm.jbb.IO;
 
-public class ComandoRestar implements Comando{
+public class ComandoRestar extends ComandoOperacion implements Comando {
 
-	Calculadora calculadora;
-	
-	public ComandoRestar(Calculadora calculadora){
-		this.calculadora = calculadora;
+	public ComandoRestar(Calculadora calculadora) {
+		super(calculadora);
 	}
 
 	@Override
@@ -23,7 +21,7 @@ public class ComandoRestar implements Comando{
 		calculadora.restar(valor);
 		IO.out.clear();
 		IO.out.print(calculadora.getTotal());
-		
+
 	}
 
 }

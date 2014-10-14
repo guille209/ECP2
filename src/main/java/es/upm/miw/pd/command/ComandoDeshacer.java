@@ -2,12 +2,10 @@ package es.upm.miw.pd.command;
 
 import upm.jbb.IO;
 
-public class ComandoDeshacer implements Comando {
-
-	Calculadora calculadora;
+public class ComandoDeshacer extends ComandoOperacion implements Comando {
 
 	public ComandoDeshacer(Calculadora calculadora) {
-		this.calculadora = calculadora;
+		super(calculadora);
 	}
 
 	@Override
@@ -20,7 +18,8 @@ public class ComandoDeshacer implements Comando {
 	public void execute() {
 		// TODO Auto-generated method stub
 		IO.out.clear();
-		IO.out.print("Ultima operación desecha, valor actual:"+calculadora.deshacer());
+		IO.out.print("Ultima operación desecha, valor actual:"
+				+ calculadora.deshacer());
 	}
 
 }
