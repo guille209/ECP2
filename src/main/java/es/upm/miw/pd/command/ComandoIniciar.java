@@ -17,9 +17,9 @@ public class ComandoIniciar extends ComandoOperacion  implements Comando {
 	@Override
 	public void execute() {
 		// TODO Auto-generated method stub
-		calculadora.iniciar();
+		getCalculadora().iniciar();
 		IO.out.clear();
-		IO.out.print(calculadora.getTotal());
+		IO.out.print(getCalculadora().getTotal());
 		
 	}
 

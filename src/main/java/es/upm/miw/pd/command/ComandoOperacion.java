@@ -1,9 +1,17 @@
 package es.upm.miw.pd.command;
 
 public abstract class ComandoOperacion {
-	protected Calculadora2 calculadora;
+	private Calculadora2 calculadora;
 	
 	public ComandoOperacion(Mementable<MementoCalculadora> calc){
-		this.calculadora = (Calculadora2) calc;
+		this.setCalculadora((Calculadora2) calc);
+	}
+
+	public Calculadora2 getCalculadora() {
+		return calculadora;
+	}
+
+	public void setCalculadora(Calculadora2 calculadora) {
+		this.calculadora = calculadora;
 	}
 }

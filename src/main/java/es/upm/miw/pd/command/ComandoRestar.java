@@ -18,9 +18,9 @@ public class ComandoRestar extends ComandoOperacion implements Comando {
 	public void execute() {
 		// TODO Auto-generated method stub
 		int valor = IO.in.readInt();
-		calculadora.restar(valor);
+		getCalculadora().restar(valor);
 		IO.out.clear();
-		IO.out.print(calculadora.getTotal());
+		IO.out.print(getCalculadora().getTotal());
 
 	}
 

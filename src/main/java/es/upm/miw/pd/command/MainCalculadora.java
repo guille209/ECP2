@@ -20,7 +20,8 @@ public class MainCalculadora {
         this.gestor.add(new ComandoRestar(calc));
         this.gestor.add(new ComandoIniciar(calc));
         this.gestor.add(new ComandoImprimir(calc));
-        this.gestor.add(new ComandoDeshacer(calc));
+        this.gestor.add(new ComandoGuardar(calc,gm));
+        this.gestor.add(new ComandoRestaurar(calc,gm));
     }
 
     public void ejecutar() {
@@ -28,13 +29,13 @@ public class MainCalculadora {
         this.gestor.execute(key);
     }
     
-    public void createMemento() {
-        this.gm.addMemento(IO.in.readString("Nombre para el guardado"), calc.createMemento());
-    }
-
-    public void restoreMemento() {
-        this.calc.restoreMemento(this.gm.getMemento((String) IO.in.select(gm.keys(), "Restaurar a version")));
-    }
+//    public void createMemento() {
+//        this.gm.addMemento(IO.in.readString("Nombre para el guardado"), calc.createMemento());
+//    }
+//
+//    public void restoreMemento() {
+//        this.calc.restoreMemento(this.gm.getMemento((String) IO.in.select(gm.keys(), "Restaurar a version")));
+//    }
 
     public static void main(String[] args) {
         IO.in.addController(new MainCalculadora());
