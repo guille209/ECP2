@@ -12,8 +12,16 @@ public class Calculadora2 extends Calculadora implements
 	@Override
 	public MementoCalculadora createMemento() {
 		// TODO Auto-generated method stub
-		System.out.println("guardo el total que es "+total);
+		System.out.println("guardo el total que es " + total);
 		return new MementoCalculadora(total);
+	}
+
+	public void restaurar() {
+
+	}
+
+	public void guardar() {
+
 	}
 
 	@Override

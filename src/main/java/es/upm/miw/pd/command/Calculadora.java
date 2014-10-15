@@ -30,10 +30,6 @@ public class Calculadora {
         this.setTotal(0);
     }
     
-    public int deshacer(){
-    	total = valorAnterior;
-    	return total;
-    }
     public String toString(){
     	return "Resultado Total es :"+total;
     }

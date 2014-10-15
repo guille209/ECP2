@@ -2,18 +2,16 @@ package es.upm.miw.pd.command;
 
 import upm.jbb.IO;
 
-public class ComandoGuardar extends ComandoOperacion implements Comando {
-	GestorMementos<MementoCalculadora> gm;
+public class ComandoGuardar extends ComandoMemento implements Comando {
 
 	public ComandoGuardar(Mementable<MementoCalculadora> calc,GestorMementos<MementoCalculadora>gm) {
-		super(calc);
-		this.gm = gm;
+		super(calc,gm);
 	}
 
 	@Override
 	public String name() {
 		// TODO Auto-generated method stub
-		return "Deshacer";
+		return "Guardar";
 	}
 
 	@Override
