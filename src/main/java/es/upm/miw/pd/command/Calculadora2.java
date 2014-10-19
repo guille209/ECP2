@@ -9,7 +9,6 @@ public class Calculadora2 extends Calculadora implements
 		this.iniciar();
 	}
 
-	@Override
 	public MementoCalculadora createMemento() {
 		// TODO Auto-generated method stub
 		System.out.println("guardo el total que es " + total);
@@ -24,7 +23,6 @@ public class Calculadora2 extends Calculadora implements
 
 	}
 
-	@Override
 	public void restoreMemento(MementoCalculadora memento) {
 		// TODO Auto-generated method stub
 		this.setTotal(memento.getTotal());

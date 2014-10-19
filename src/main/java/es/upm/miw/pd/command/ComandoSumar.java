@@ -8,13 +8,11 @@ public class ComandoSumar extends ComandoOperacion implements Comando {
 		super(calc);
 	}
 
-	@Override
 	public String name() {
 		// TODO Auto-generated method stub
 		return "Sumar";
 	}
 
-	@Override
 	public void execute() {
 		// TODO Auto-generated method stub
 		int valor = IO.in.readInt();

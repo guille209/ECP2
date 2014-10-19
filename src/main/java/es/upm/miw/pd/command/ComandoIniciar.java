@@ -8,13 +8,11 @@ public class ComandoIniciar extends ComandoOperacion  implements Comando {
 		super(calc);
 	}
 
-	@Override
 	public String name() {
 		// TODO Auto-generated method stub
 		return "Iniciar";
 	}
 
-	@Override
 	public void execute() {
 		// TODO Auto-generated method stub
 		getCalculadora().iniciar();

@@ -8,13 +8,11 @@ public class ComandoGuardar extends ComandoMemento implements Comando {
 		super(calc,gm);
 	}
 
-	@Override
 	public String name() {
 		// TODO Auto-generated method stub
 		return "Guardar";
 	}
 
-	@Override
 	public void execute() {
 		// TODO Auto-generated method stub
 		this.gm.addMemento(IO.in.readString("Nombre para el guardado"), getCalculadora().createMemento());

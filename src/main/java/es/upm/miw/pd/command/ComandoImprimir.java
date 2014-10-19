@@ -10,13 +10,11 @@ public class ComandoImprimir extends ComandoOperacion implements Comando {
 		super(calc);
 	}
 
-	@Override
 	public String name() {
 		// TODO Auto-generated method stub
 		return "Imprimir";
 	}
 
-	@Override
 	public void execute() {
 		// TODO Auto-generated method stub
 		IO.out.clear();
